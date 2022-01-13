@@ -4,7 +4,7 @@ var i;
 
 function preload(){
   pathImg=loadImage("path.png"); //loadImage de path (camino)
-  boyImg=loadAnimation("jake1.png","jake2.png","jake3.png","jake4.png");//loadAnimation de boy (niño)
+  boyImg=loadAnimation("jake1.png","jake2.png","jake3.png");//loadAnimation de boy (niño)
  
 }
 
@@ -18,7 +18,7 @@ function setup(){
 
  boy=createSprite(200,350,100,100);//crear sprite de boy (niño)
  boy.addAnimation("boy_runnig",boyImg);//agregar animación para boy
- boy.scale=0.51;//escla del boy
+  boy.scale=0.51;//escla del boy
   
   // crear  left Boundary (límite izquierdo)
   leftBoundary=createSprite(0,0,100,800);
